@@ -1,0 +1,21 @@
+{
+  "name": "starquiz",
+  "version": "1.0.0",
+  "description": "Desafio StarWars S2IT",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "starwarsapi",
+    "starwars",
+    "swapi"
+  ],
+  "author": "Everton De Grande",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "jquery": "^3.3.1",
+    "material-design-lite": "^1.3.0"
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>StarWarsQuiz</title>
+
+        <!-- CSS MATERIAL DESIGN LITE -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link
+            rel="stylesheet"
+            href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+            type="text/css">
+        <link
+            rel="stylesheet"
+            href="./node_modules/material-design-lite/material.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- ANIMATE.CSS -->
+        <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+        <!-- JQUERY -->
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./assets/js/index.js"></script>
+    </head>
+    <body>
+
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">StarWars Quiz</span>
+
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation. We hide it in small screens. -->
+                    <div class="mdl-navigation mdl-layout--large-screen-only">
+                        <span>
+                            <strong>Tempo</strong>
+                        </span><span class="timerCountDown">00:10</span>
+                        <div class="mdl-layout-spacer"></div>
+                        <span class="pontuacao">
+                                Pontos:<span class="pontos">0</span> 
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">StarWars Quiz</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">Reiniciar</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+
+                    <!-- mdl-cell--1-offset -->
+                    <div id="loading">
+                        <br/><br/>
+                        <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+                    </div>
+                    <div id="gridCardsPerson" class="mdl-grid"></div>
+
+                    <div class="navPerson mdl-cell--4-col mdl-cell--5-offset">
+                        <!-- Primary-colored flat button -->
+                        <a
+                            class="mdl-button mdl-js-button mdl-button--accent prevPage"
+                            id="prevPage"
+                            linkp="">
+                            Anterior
+                        </a>
+                        <!-- Accent-colored flat button -->
+                        <a
+                            class="mdl-button mdl-js-button mdl-button--accent nextPage"
+                            id="nextPage"
+                            linkn="">
+                            Próximo
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <dialog class="mdl-dialog mdl-cell--5-col">
+        <h6 class="mdl-dialog__title"></h6>
+        <div class="mdl-dialog__content detailsPerson"></div>
+        <!-- <div id="p2" class="mdl-progress mdl-js-progress
+        mdl-progress__indeterminate loadDetails"></div> -->
+        <div class="mdl-dialog__actions">
+            <button type="button" class="mdl-button closeStart">Iniciar</button>
+            <button type="button" class="mdl-button close">Fechar</button>
+        </div>
+    </dialog>
+    <!-- JS MATERIAL DESIGN LITE -->
+    <script src="./node_modules/material-design-lite/material.min.js"></script>
+</body>
+</html>
